@@ -1,6 +1,6 @@
 import time
 # define the instruction section
-def instructionsection():
+def instructionsection(name):
     uplayed = input("Have you played my game before? ")  # ask if user has played to display instructions or not
     if uplayed == "n" or uplayed == "N" or uplayed == "no" or uplayed == "No" or uplayed == "nah" or uplayed == "Nah" or uplayed == "NO":  # ensure that what user answers is identified
         print("Well", name, ", let's hope you don't have beginner's luck.")
@@ -37,4 +37,5 @@ def instructionsection():
         instructionsection()  # call function to repeat
     return
 
-instructionsection()
+name=input("NAme please")
+instructionsection(name)
